@@ -1,4 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url('http://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+@import url('https://fonts.googleapis.com/css?family=Jua');
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -106,4 +108,5 @@
 
 div h1 {
 	text-align: center;
+	font-family: 'Exo 2', 'Jua', sans-serif;
 }
