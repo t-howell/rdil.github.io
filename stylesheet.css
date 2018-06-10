@@ -96,7 +96,7 @@
   background: #47c9af;
 }
 
-#main {
+.main {
 	background-color: white; 
 	border: 5px solid black;
 	padding: 20px;
