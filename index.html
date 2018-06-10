@@ -145,7 +145,7 @@
    <li><a href='#'>Projects</a></li>
    <li><a href='#'>Minecraft Stuff</a></li>
    <li><a href='#'>Contact</a></li>
-   <li><a href='#'>Credits</a></li>
+   <li><a href='#' class='creditz'>Credits</a></li>
 </ul>
 </div>
 <br />
@@ -158,5 +158,10 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 } 
 </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+	$("a.creditz").click(function(){
+		alert("Website Credits: Navigation bar on top created by http://cssmenumaker.com, Rest of coding by RDIL.");
+	});
+</script>
 </body>
 </html>
