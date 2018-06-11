@@ -149,11 +149,11 @@
 <body>
 <div id='cssmenu'>
 <ul>
-   <li><a href='https://rdil.github.io'>Home</a></li>
-   <li><a href='#aboutme'>About Me</a></li>
-   <li><a href='#'>Projects</a></li>
-   <li><a href='#'>Minecraft Stuff</a></li>
-   <li><a href='#contactmee'>Contact</a></li>
+   <li><a href='https://rdil.github.io' id="home">Home</a></li>
+   <li><a href='#aboutme' id="aboutmee">About Me</a></li>
+   <li><a href='#' id="projekts">Projects</a></li>
+   <li><a href='#' id="mcstuff">Minecraft Stuff</a></li>
+   <li><a href='#contactmee' id="ct">Contact</a></li>
    <li><a href='#' class='creditz'>Credits</a></li>
 </ul>
 </div>
@@ -172,6 +172,18 @@
   <h2 id="contactmee">Contact Me</h2>
   
 </div>
+<script type="text/javascript">
+	$("a#aboutmee").click(function(){
+		document.querySelector('#aboutme').scrollIntoView({ 
+    		behavior: 'smooth' 
+    	}
+	});
+	$("a#ct").click(function(){
+		document.querySelector('#contactmee').scrollIntoView({ 
+    		behavior: 'smooth' 
+    	}
+	});
+</script>
 <div id="google_translate_element"></div><script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
