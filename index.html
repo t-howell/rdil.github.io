@@ -8,6 +8,12 @@
 <meta name="description" content="RDIL's GitHub pages site.  It is very cool!" />
 <meta http-equiv="expires" content="Thu, 31 Dec 2020 23:59:59 GMT" />
 <meta theme-color="#47c9af" />
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+	function onSubmit(token) {
+		document.getElementById("contact-form").submit();
+	}
+</script>
 <script type="text/javascript" src="mobile.js"></script>
 
 <style type="text/css">
@@ -129,7 +135,7 @@
 		font-family: 'Jua', 'Exo 2', sans-serif;
 	}
 	
-	#aboutme {
+	#aboutme, #contactmee {
 		font-family: 'Comfortaa', cursive;
 	}
 
@@ -166,6 +172,11 @@
   <br />
   <h2 id="aboutme">About Me</h2>
   <p class="super">I am a software developer and coder, I research cybersecurity, and I play Minecraft.  You can see all of my projects below!</p>
+  <br />
+  <br />
+  <br />
+  <h2 id="contactmee">Contact Me</h2>
+  <button id="contact-form" class="g-recaptcha" data-sitekey="">Get Contact Info (Protected by reCaptcha)</button>
 </div>
 <div id="google_translate_element"></div><script type="text/javascript">
 function googleTranslateElementInit() {
