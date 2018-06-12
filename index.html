@@ -230,8 +230,9 @@
   <br />
   <h2 id="contactmee">Contact Me</h2>
   <label class="container">I will not contact RDIL with bad intent.
-  <input type="checkbox">
+  <input type="checkbox" id="checkboxx">
   <span class="checkmark"></span>
+  <p id="ctInf">Contact Info:</p>
 </label>
 </div>
 <script type="text/javascript">
@@ -250,7 +251,17 @@
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 } 
-</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</script>
+<script type="text/javascript">
+	var cTF = document.getElementById("checkboxx").checked;
+	if(cTF) {
+			$("#ctInf").show();
+	}
+	else {
+    		$("#ctInf").hide();
+	}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 	$("a.creditz").click(function(){
 		alert("Website Credits: Navigation bar on top created by http://cssmenumaker.com, Check box by w3schools, FontAwesome was used, Rest of coding by RDIL!");
