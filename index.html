@@ -127,12 +127,21 @@
 		font-family: 'Exo 2', 'Jua', sans-serif;
 	}
 
+	.Aproject {
+		display: inline-block;
+		background: #f2edd7;
+		color: #d30e00;
+		padding: 15px;
+		margin: 1px auto;
+	}
+
 	.main p {
 		font-family: 'Jua', 'Exo 2', sans-serif;
 	}
 	
-	#aboutme, #contactmee {
+	#aboutme, #contactmee, #don8, #pjcts {
 		font-family: 'Comfortaa', cursive;
+		text-align: center;
 	}
 
 	#google_translate_element {
@@ -187,8 +196,8 @@
   <br />
   <h2 id="pjcts">My Coding Projects <i class="fas fa-code cFA"></i></h2>
   <ul>
-  <li>RainbowScript-Java ~ A simple script for making things rainbow, written in Java.</li>
-  <li>RDIL.GitHub.io ~ This site!</li>
+  <li class="Aproject">RainbowScript-Java ~ A simple script for making things rainbow, written in Java.</li>
+  <li class="Aproject">RDIL.GitHub.io ~ This site!</li>
   </ul>
   <br />
   <br />
@@ -199,11 +208,11 @@
   <br />
   <br />
   <br />
-  <h2 id="don8">Donate </h2><i class="fas fa-donate cFA"></i>
+  <h2 id="don8">Donate <i class="fas fa-donate cFA"></i></h2>
   <br />
   <br />
   <br />
-  <aside>Like the webpage?  Give me a <i class="fas fa-star cFA"></i> on GitHub!</aside>
+  <aside class="hvr-rectangle-out">Like the webpage?  Give me a <i class="fas fa-star cFA"></i> on GitHub!</aside>
 </div>
 <script type="text/javascript">
 	$("a#aboutmee").click(function(){
@@ -221,6 +230,11 @@
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 } 
+</script>
+<script type="text/javascript">
+	$.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+  		console.log(JSON.stringify(data, null, 2));
+	});
 </script>
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
