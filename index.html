@@ -112,63 +112,6 @@
 	#cssmenu > ul > li > a:hover:after {
  		background: #47c9af;
 	}
-	.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-}
-
-.container:hover input ~ .checkmark {
-    background-color: #ccc;
-}
-
-.container input:checked ~ .checkmark {
-    background-color: #2196F3;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.container input:checked ~ .checkmark:after {
-    display: block;
-}
-
-.container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
 
 	.main {
 		background-color: white; 
@@ -201,6 +144,14 @@
 	body {
 		background: #f2edd7;
 	}
+
+	#ctInf a {
+		color: black;
+	}
+
+	.cFA {
+		white-space: nowrap;
+	}
 </style>
 
 </head>
@@ -228,7 +179,7 @@
   <br />
   <br />
   <br />
-  <h2 id="pjcts">My Coding Projects</h2><i class="fas fa-code" style="margin: 0px auto;"></i>
+  <h2 id="pjcts">My Coding Projects <i class="fas fa-code cFA"></i></h2>
   <ul>
   <li>RainbowScript-Java ~ A simple script for making things rainbow, written in Java.</li>
   </ul>
@@ -236,11 +187,8 @@
   <br />
   <br />
   <h2 id="contactmee">Contact Me</h2>
-  <label class="container">I will not contact RDIL with bad intent.
-  <input type="checkbox" id="checkboxx">
-  <span class="checkmark"></span>
-  <p id="ctInf">Contact Info:</p>
-</label>
+  <p id="ctInf" class="cFA"><i class="fab fa-discord"></i> Discord: jumbocakeyumyum#1516</p>
+  <p id="ctInf" class="cFA"><i class="fab fa-github-square"></i> GitHub: <a href="https://github.com/RDIL">RDIL</a></p>
 </div>
 <script type="text/javascript">
 	$("a#aboutmee").click(function(){
@@ -258,15 +206,6 @@
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 } 
-</script>
-<script type="text/javascript">
-	var cTF = document.getElementById("checkboxx").checked;
-	if(cTF == true) {
-			$("#ctInf").show();
-	}
-	else {
-    		$("#ctInf").hide();
-	}
 </script>
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
