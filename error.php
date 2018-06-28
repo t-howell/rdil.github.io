@@ -7,7 +7,8 @@ $codes = array(
        500 => array('500 Internal Server Error', 'The request was unsuccessful due to an unexpected condition encountered by the server.'),
        502 => array('502 Bad Gateway', 'The server received an invalid response from the upstream server while trying to fulfill the request.'),
        504 => array('504 Gateway Timeout', 'The upstream server failed to send a request in the time allowed by the server.'),
-	   418 => array('Error 418',  'Unknown issue.'),
+       418 => array('Error 418',  'Unknown issue.'),
+       401 => array('Error 401',  'Unauthorised.'),
 );
 
 $title = $codes[$status][0];
