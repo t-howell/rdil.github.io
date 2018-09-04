@@ -8,10 +8,36 @@
   <meta name="robots" content="noindex, nofollow" />
 </head>
 <body>
-  <div class="helloworld">
-    <span>I am a span inside the div with the class "helloworld"!</span>
+  <div id="helloworld">
+    <span>I am a span inside the div with the id "helloworld"!</span>
   </div>
   <br />
   <div>Test Div</div>
+  <!-- Here comes the jQuery! -->  
+  <script type="text/javascript" />
+    // Start of a jQuery function:  
+    jQuery(function($) {
+    
+      // First, set what you want to append to a variable.  
+      var lovelyVar = $('<p>Hello user, I am a paragraph that has been appended to the helloworld div AFTER page load by DOM!</p>');
+      // Next, we need to actually append it.  It looks like the following:  
+      $(lovelyVar).appendTo('#helloworld');
+      // And that is it.  It should work!  
+      
+      // ----------------------------------------------------------------------------------------------------------------------
+      
+      // Now, you can also append to something you have already appended!  Here is an example:  
+      var exampleVarOne = $('<div id="eee"></div>');
+      // That is a div.  Now lets append it to the body of the page!  
+      $(exampleVarOne).appendTo('body');
+      // Now lets append something to that div we just made!
+      var exampleVarTwo = $('<i>Some text in italics &amp; this was also put on the page by DOM!</i>');
+      $(exampleVarTwo).appendTo(exampleVarOne);
+      // and that should work!
+      
+      // End jQuery function:  
+    });
+    // End script tag  
+  </script>
 </body>
 </html>
