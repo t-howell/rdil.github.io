@@ -1,0 +1,11 @@
+body {
+  min-height: 100%;
+  background-color: red;
+  color: green;
+  margin: 25px; 
+}
+
+div {
+  border: 2px solid cornflowerblue;
+  padding: 5px;
+}
