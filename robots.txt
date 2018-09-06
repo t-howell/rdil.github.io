@@ -1,6 +1,5 @@
 User-agent: *  
-Disallow: 
+Disallow: /projects/
+Disallow: /projects2/
 Allow: *
 
-User-agent: Bingbot
-Disallow: /
