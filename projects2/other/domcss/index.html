@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- As you can see, no css stylesheet has been linked, and no style tags are present on page load.  -->
   <title>dom-css Example Page</title>
   <meta charset="utf-8" />
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
@@ -12,10 +13,42 @@
   </div>
   <br />
   <div>Test Div</div>
+  <br />
+  <a href="https://www.example.com" title="Example.com Link!" />
   <!-- Here comes the jQuery! -->  
   <script type="text/javascript">
     // Start of a jQuery function:  
     jQuery(function($) {
+      // step 1: create a border on the helloworld div:
+      $("#helloworld").css({
+        'border': '2.5px solid teal'
+      });
+      // Now we should have a teal, 2.5px border with no dashes.  
+      
+      // Let's add some padding, and a font-size
+      $("helloworld").css({
+        'padding-left': '5px',
+        'padding-right': '5px',
+        'padding-top': '7.5px',
+        'padding-bottom': '7.5px',
+        'font-size': '15px'
+      });
+      // Perfect
+      
+      // Another cool feature with this is that it can use all kinds of different css selectors.  
+      
+      $(":visited").css({
+        'color': 'gray'
+      });
+      $("a").css({
+        'background-color': 'cornflowerblue'
+      });
+      $("[title]").css({
+        'display': 'block'
+      });
+      // Above I have written a few examples of selectors you can use.  
+      
+      // And that's about it.  It should work normally!  
       
       // End jQuery function:  
     });
