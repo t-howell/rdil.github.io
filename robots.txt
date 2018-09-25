@@ -2,4 +2,5 @@ User-agent: *
 Disallow: /projects/
 Disallow: /projects2/
 Disallow: /cdn/
+Disallow: /content/
 Allow: *
