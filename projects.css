@@ -1,0 +1,22 @@
+/* 
+Author: Tamara Howell
+GitHub: https://github.com/t-howell/
+*/
+
+#projects-section {
+    justify-items: center;
+    margin-top: 2em;
+    width: 100%;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: auto auto auto;
+}
+.Aproject {
+    
+    border-radius: 5px;
+    border: 1px solid rgb(163, 163, 163);
+    width: 300px;
+}
+div.Aproject > * {
+    font-family: Arial, Helvetica, sans-serif;
+}
