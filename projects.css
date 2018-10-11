@@ -17,6 +17,6 @@ GitHub: https://github.com/t-howell/
     border: 1px solid rgb(163, 163, 163);
     width: 300px;
 }
-div.Aproject > * {
+div.Aproject > h4, div.Aproject > p {
     font-family: Arial, Helvetica, sans-serif;
 }
